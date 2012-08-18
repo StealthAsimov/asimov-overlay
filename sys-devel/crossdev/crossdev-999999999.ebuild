@@ -4,7 +4,7 @@
 
 EAPI="4"
 
-if [[ ${PV} == "latest" ]] ; then
+if [[ ${PV} == "999999999" ]] ; then
 	EGIT_REPO_URI="git://github.com/StealthAsimov/crossdev-fork.git"
 	inherit git-2
 	SRC_URI=""
@@ -25,7 +25,7 @@ DEPEND="app-arch/xz-utils"
 
 src_install() {
 	default
-	if [[ "${PV}" == "latest" ]] ; then
+	if [[ "${PV}" == "999999999" ]] ; then
 		sed -i "s:@CDEVPV@:${EGIT_VERSION}:" "${ED}"/usr/bin/crossdev || die
 	fi
 }
