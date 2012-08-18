@@ -26,6 +26,9 @@ DEPEND="app-arch/xz-utils"
 src_install() {
 	default
 	if [[ "${PV}" == "999999999" ]] ; then
-		sed -i "s:@CDEVPV@:${EGIT_VERSION}:" "${ED}"/usr/bin/crossdev || die
+		echo "I am here you"
+		echo ${EGIT_VERSION}
+		echo ${ED}
+		sed -i "s:@CDEVPV@:${EGIT_VERSION}:" "${ED%?}"/bin/crossdev || die
 	fi
 }
