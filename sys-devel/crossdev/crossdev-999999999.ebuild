@@ -8,7 +8,7 @@ if [[ ${PV} == "999999999" ]] ; then
 	EGIT_REPO_URI="git://github.com/StealthAsimov/crossdev-fork.git"
 	inherit git-2
 	SRC_URI=""
-	#KEYWORDS=""
+	KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~x86-fbsd"
 fi
 
 DESCRIPTION="Gentoo Cross-toolchain generator"
