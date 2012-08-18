@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<repositories version="1.0">
+  <repo priority="50" quality="experimental" status="official">
+    <name>asimov</name>
+    <description>StealthAsimov's overlay with cross-embedded packages including modified crossdev package</description>
+    <homepage>https://github.com/StealthAsimov/asimov-overlay.git</homepage>
+    <owner>
+      <email>andy.holst85@gmail.com</email>
+      <name>Andy Holst</name>
+    </owner>
+    <source type="git">git://github.com/StealthAsimov/asimov-overlay.git</source>
+  </repo>
+</repositories>
